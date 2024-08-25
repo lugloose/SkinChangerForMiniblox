@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Vape V4
-// @namespace    http://7granddadpgn.github.io
+// @name         Skin Changer V1
+// @namespace    https://github.com/lugloose
 // @version      2024-07-29
 // @description  A browser script made to give enhancements on miniblox.io
-// @author       7GrandDad
+// @author       Cr1ms0n
 // @match        https://miniblox.io/*
 // @icon         https://miniblox.io/favicon.png
 // @grant        GM_getValue
@@ -17,7 +17,7 @@
 
 	async function execute(url, oldScript) {
 		if (oldScript) oldScript.type = 'javascript/blocked';
-		let data = await fetch("https://raw.githubusercontent.com/7GrandDadPGN/VapeForMiniblox/main/injection.js").then(e => e.text());
+		let data = await fetch("https://raw.githubusercontent.com/lugloose/SkinChangerForMiniblox/main/injection.js").then(e => e.text());
 		if (oldScript) oldScript.type = 'module';
 		eval(data.replace("scripturl", url));
 	}
