@@ -31,7 +31,7 @@
 		if (_ == "PurpleFade") {
 			const $ = capes[_];
 			return new Promise((et, tt) => {
-				textureManager.loader.load("https://raw.githubusercontent.com/lugloose/SkinChangerForMiniblox/main/assets/capetest.png", rt => {
+				textureManager.loader.load("https://raw.githubusercontent.com/lugloose/SkinChangerForMiniblox/main/assets/cape.png", rt => {
 					const nt = {
 						atlas: rt,
 						id: _,
